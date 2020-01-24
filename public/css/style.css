@@ -1,0 +1,363 @@
+/*************************************
+**************************************
+tag selectors
+**************************************
+*************************************/
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.tab-pan i {
+  font-size: 3rem;
+}
+
+/* form customization */
+input,
+select,
+textarea {
+  color: #fff;
+  width: 100%;
+}
+
+textarea {
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/*************************************
+**************************************
+id selectors
+**************************************
+*************************************/
+#navbar {
+  transition: top 0.3s;
+}
+
+/*************************************
+**************************************
+class selectors
+**************************************
+*************************************/
+.hr-light {
+  border: 0.5px solid #fff;
+}
+
+/* fonts */
+.font-bigshoulderstext {
+  font-family: 'Big Shoulders Text', cursive;
+}
+
+.font-sourcecodepro {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 100%;
+  line-height: 1.5rem;
+}
+
+.skinny-text {
+  font-weight: 100;
+}
+
+/*************************************
+backgrounds
+**************************************/
+.bg-black {
+  background-color: rgba(27, 27, 27, 1);
+}
+
+.bg-footer {
+  background-color: rgb(22, 22, 22);
+}
+
+/* background image setting */
+.bg-image {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* intro: laptop */
+.bg-image.macbook {
+  background-image: url('/img/macbook.jpg');
+  padding: 5% 5%;
+}
+
+/* experience: llc */
+.bg-image.llc {
+  background-image: url('/img/llc.jpg');
+}
+
+.llc .bg-transcolor {
+  background-color: rgba(128, 0, 0, 0.7);
+}
+
+/* experience: zpc */
+.bg-image.zpc {
+  background-image: url('/img/zpc.jpg');
+  background-position-y: 0;
+}
+
+.zpc .bg-transcolor {
+  background-color: rgba(0, 0, 128, 0.7);
+}
+
+/* portfolio: coding projects */
+.bg-image.code {
+  background-image: url('/img/code.jpg');
+}
+
+.code .bg-transcolor {
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position-y: 0;
+}
+
+.github-div {
+  height: 4rem;
+}
+
+/* portfolio: graphic design */
+.bg-image.keyboard {
+  background-image: url('/img/keyboard.JPG');
+}
+
+.keyboard .bg-transcolor {
+  background-color: rgba(255, 255, 255, 0.7);
+  background-position-y: 0;
+}
+
+.graphic-img {
+  width: 20vw;
+}
+
+/* introduction quote */
+.quote-marks {
+  position: absolute;
+  margin: 0;
+  padding: 0 15%;
+  font-size: 25vw;
+}
+
+.quote-marks.start {
+  margin: 11% 50% 0 0;
+}
+
+.quote-marks.end {
+  margin-left: 50%;
+}
+
+.quote-detail {
+  margin: 25% 0 0;
+  font-size: 8vw;
+}
+
+.quote-giver {
+  margin: 25% 0 0;
+  font-size: 5vw;
+}
+
+/* paddings */
+.box-p-lg {
+  padding: 15% 10%;
+}
+
+.box-p-md {
+  padding: 10% 5%;
+}
+
+/* intro: story */
+.box-p-story {
+  padding: 25% 5%;
+}
+
+.text-yellowgreen {
+  color: yellowgreen;
+}
+
+/* contact: social media */
+.socialmedia-padding {
+  padding: 0 25%;
+}
+
+.socialmedia-padding-sm {
+  padding: 0 20%;
+}
+
+i.colored {
+  font-size: 3rem;
+}
+
+.size-github {
+  font-size: 32px !important;
+}
+
+/*************************************
+colors
+**************************************/
+/* social media: colors */
+.color-linkedin {
+  color: #0e76a8;
+  border-color: #0e76a8 !important;
+}
+
+.color-facebook {
+  color: #3b5998;
+  border-color: #3b5998 !important;
+}
+
+.color-snapchat {
+  color: #FFFC00;
+  border-color: #FFFC00 !important;
+}
+
+.color-instagram {
+  color: #E1306C;
+  border-color: #E1306C !important;
+}
+
+.color-twitter {
+  color: #1DA1F2;
+  border-color: #1DA1F2 !important;
+}
+
+.color-github {
+  color: #333;
+  border-color: #333 !important;
+}
+
+/*************************************
+bootstrap and others
+**************************************/
+
+/* navbar toggler */
+.custom-toggler.navbar-toggler {
+  border-width: 0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+/* list group active */
+.list-group-item.active {
+  background-color: rgba(128, 0, 0, 1);
+  border-color: rgba(128, 0, 0, 1);
+}
+
+/* blinking cursor by Artem Gordinsky */
+.blinking-cursor {
+  cursor: initial;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-right: 1rem: color: greenyellow;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: greenyellow;
+  }
+}
+
+@-moz-keyframes blink {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: greenyellow;
+  }
+}
+
+@-webkit-keyframes "blink" {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: greenyellow;
+  }
+}
+
+@-ms-keyframes "blink" {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: greenyellow;
+  }
+}
+
+@-o-keyframes "blink" {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: greenyellow;
+  }
+}
+
+/* 
+col sizes
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide) */

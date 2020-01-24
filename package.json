@@ -1,0 +1,21 @@
+{
+  "name": "liansangdesign",
+  "version": "1.0.0",
+  "description": "Lian Sang's portfolio as a junior web developer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lian Sang",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.9",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "nodemailer": "^6.4.2",
+    "xoauth2": "^1.2.0"
+  }
+}

@@ -1,0 +1,23 @@
+body {
+    background: #1b1b1b;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+button,
+div {
+    font-size: 2vw;
+}
+
+.status-box {
+    position: absolute;
+    padding: 2rem 2rem;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    text-align: center;
+}
