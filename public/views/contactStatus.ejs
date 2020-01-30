@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contact Fail!</title>
+    <title>Contact <%= connectionStatus %>!</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <!-- Styles -->
@@ -12,12 +12,12 @@
 
 <body>
     <div class="status-box">
-        <h1>FAIL!</h1>
+        <h1> <%= connectionStatus.toUpperCase() %> !</h1>
         <hr>
-        <p>Your contact request has failed.</p>
-        <p>Sorry, please try again.</p>
-        <button onclick="window.location.href = 'http://www.liansangdesign.com/#contact';"
-            class="btn btn-outline-dark">Contact</button>
+        <p><%= firstMessage %></p>
+        <p><%= secondMessage %></p>
+        <button onclick="window.location.href = 'http://www.liansangdesign.com/';"
+            class="btn btn-outline-dark">Home</button>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

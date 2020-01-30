@@ -8,6 +8,10 @@ const app = express();
 
 const port = process.env.PORT || '3000';
 
+// setting up ejs and its view directory
+app.set('views', __dirname + '/public/views');
+app.set('view engine', 'ejs');
+
 // bodyParser is used to request html body input values
 app.use(
   bodyParser.urlencoded({
@@ -88,17 +92,41 @@ app.post('/', function (req, res) {
 
   // Notify if email is successfully sent or failed
   transporter.sendMail(mailOptions, (error, info) => {
+
+    var cStatus = '',
+      fMessage = '',
+      sMessage = '';
+
     if (error) {
+      cStatus = 'Failed';
+      fMessage = 'Your contact request has failed.';
+      sMessage = 'Sorry, please try again.';
+
       console.log(error);
-      res.sendFile(__dirname + '/public/html/fail.html');
+
+      // rendering a failure connection status page
+      res.render('contactStatus', {
+        connectionStatus: cStatus,
+        firstMessage: fMessage,
+        secondMessage: sMessage
+      });
     } else {
+      cStatus = 'Success';
+      fMessage = 'Your contact request was successfully sent.';
+      sMessage = 'Thank you!';
+
       console.log('Message sent: %s', info.messageId);
       // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-      res.sendFile(__dirname + '/public/html/success.html');
+      // rendering a successful connection status page
+      res.render('contactStatus', {
+        connectionStatus: cStatus,
+        firstMessage: fMessage,
+        secondMessage: sMessage
+      });
     }
   });
 });
