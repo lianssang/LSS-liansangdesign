@@ -132,6 +132,12 @@ app.post('/', function (req, res) {
 });
 
 // Running sever with express
-app.listen(port, function () {
-  console.log('Server is running.');
+app.listen(port, function (err) {
+  if (port === process.env.PORT) {
+    console.log('Server is running on ' + process.env.PORT + '.');
+  } else if (port === '3000') {
+    console.log('Server is running on 3000.');
+  } else {
+    console.log(err);
+  }
 });
